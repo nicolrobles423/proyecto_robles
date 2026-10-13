@@ -1,4 +1,5 @@
 # Sistema de facturacion
+
 # paso 2: Inventario en memoria
 
 nombre_empresa = "Tecnologia Springfield"
@@ -30,5 +31,16 @@ productos = [
         "nombre": "Monitor",
         "precio": 180.00,
         "stock": 5
+ 
     }
 ]
+
+#Paso 4. Mostrar todos los productos
+print("\n--- INVENTARIO ---")
+
+for producto in productos:
+    print(f"ID: {producto['id']}")
+    print(f"Nombre: {producto['nombre']}")
+    print(f"Precio: ${producto['precio']:.2f}")
+    print(f"Stock: {producto['stock']}")
+    print("-------------------")
